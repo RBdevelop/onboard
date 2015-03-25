@@ -1,6 +1,7 @@
-class EmployeesController < Devise::SessionsController
+class EmployeesController <  InheritedResources::Base
 
-	belongs_to :company
+
+	
   private
 
     def employee_params

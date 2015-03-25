@@ -1,6 +1,6 @@
-class CompaniesController < Devise::SessionsController
+class CompaniesController <  InheritedResources::Base
 
-  has_many :employees
+  
   
   private
 

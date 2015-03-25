@@ -1,2 +1,49 @@
     @import 'bootstrap-sprockets';
     @import 'bootstrap';
+
+container-header {
+	color: white;
+	text-align: center;
+	}
+
+.navbar-static-top-a{
+    	background-color: #2b71b1;
+    	text-align: center;
+    	color: #ffffff;
+    	top: 40%;
+		left: 50%;
+		width: 100%;
+		margin-top: 0;
+		line-height:2.5em;
+    }
+
+
+.sign-in-body{	
+	background-color: #f8f8f8;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+.sign-in-box {
+	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	background-color: #fff;
+	width: 60%;
+	border: 2px solid ;
+	border-radius: 3%; 
+	}
+.sign-in {
+	width: 100%;
+
+}
+
+.form-inputs {
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.form-inputs-sign {
+	color:white;
+}
