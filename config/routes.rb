@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :employees
-  devise_for :companies
+  devise_for :employees, controllers: { sessions: "employees/sessions" }
+  devise_for :companies, controllers: { sessions: "companies/sessions" }
+  
   resources :employees
 
   resources :companies
