@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :lessons
+
+  resources :quizzes
+
   devise_for :employees, controllers: { sessions: "employees/sessions" }
   devise_for :companies, controllers: { sessions: "companies/sessions" }
   

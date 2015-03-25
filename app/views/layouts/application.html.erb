@@ -7,6 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id= "container">
+		<div id= "user_nav">
+			<%if employee_signed_in? %>
+			Logged in as <strong> <%= current_employee.email %> </strong>
+			<%= link_to "Logout", destroy_employee_session_path, method:  :delete%>
+			 <% else %>
+    		<%= link_to "Sign up", new_emploee_registration_path %> or <%= link_to "sign in", new_employee_session_path %>
+  <% end %>
+  		</div>
+  	</div>
+
+
 
 <%= yield %>
 
