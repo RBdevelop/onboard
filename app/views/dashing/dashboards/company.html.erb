@@ -1,0 +1,25 @@
+<% content_for :company do %>
+  Company Dashboard
+<% end %>
+
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Howdy!" data-text="Welcome to OnBoard IO !." data-moreinfo=" Lets get your team setup and check progess "style="background-color:#d60a0a"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Your team is " data-moreinfo="# of times said in Slack"style="background-color:#d60a0a"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Stock Price" data-moreinfo="In USD" data-prefix="$" style="background-color: #FF6600"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1" onclick="location.href='http://localhost:3000/dashing/dashboards/lessons';">
+      <div data-id="lessons" data-view="Graph" data-title="Lets create some lessons!" style="background-color:#d6bf0a"></div>
+    </li>
+  </ul>
+  <center><div style="font-size: 12px">For Coinbase Employee Eyes only!</div></center>
+</div>

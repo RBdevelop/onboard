@@ -13,7 +13,7 @@
 			Logged in as <strong> <%= current_employee.email %> </strong>
 			<%= link_to "Logout", destroy_employee_session_path, method:  :delete%>
 			 <% else %>
-    		<%= link_to "Sign up", new_emploee_registration_path %> or <%= link_to "sign in", new_employee_session_path %>
+    		<%= link_to "Sign up", new_employee_registration_path %> or <%= link_to "sign in", new_employee_session_path %>
   <% end %>
   		</div>
   	</div>

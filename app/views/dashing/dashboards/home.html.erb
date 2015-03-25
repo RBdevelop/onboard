@@ -1,0 +1,43 @@
+<% content_for :home do %>
+  OnBoard IO 
+<% end %>
+
+<body style="background-color:#3882cd" >
+<div class="container-fluid">
+  <h2> Welcome to OnBoard IO <h2>
+  <h3 style= "text-align:right"> Employee OnBoarding like whoa!" </h3>
+</div>
+<div class="gridster">
+
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Employee" data-text="I'm ready to be trained" data-moreinfo="Come at me!" style="background-color:#5AE717">
+      </div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+    <div><%= link_to " Employee Sign up", new_registration_path(Employee)%>
+    </div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+    <div><%= link_to " Employee Login", employee_session_path %>
+    </div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="2" data-sizey="1">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Company" data-text= "I'm ready create a training " data-moreinfo="Lets do this!" style="background-color:#F31843">
+      </div>
+    </li>
+    
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div><%= link_to " Company Sign up", new_registration_path(Company)%>
+      </div>
+    </li>
+
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div><%= link_to " Company Login", new_session_path(Company)%>
+      </div>
+    </li>
+  
+  </div>
+</body>
