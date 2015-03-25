@@ -1,7 +1,6 @@
 class CompaniesController <  InheritedResources::Base
 
   
-  
   private
 
     def company_params

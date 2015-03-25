@@ -66,3 +66,4 @@ end
 
 gem 'bootstrap-sass'
 gem 'dashing-rails'
+gem 'redis'
